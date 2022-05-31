@@ -6,10 +6,103 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="main.css">
 </head>
 
-<body>
-    Product
+<body class="container xl mx-auto">
+    <div class="justify-between flex mt-12">
+        <div class="font-bold text-3xl flex">Fudo
+            <p class="text-red-500">.</p>
+        </div>
+        <div class="mx-4">
+            <ul class="flex ">
+                <li class="mx-4"><a href="" class="font-bold text-xl hover:text-red">Home</a></li>
+                <li class="mx-4"><a href="" class="font-bold text-xl hover:text-red">Products</a></li>
+                <li class="mx-4"><a href="" class="font-bold text-xl hover:text-red">About Us</a></li>
+                <li class="mx-4"><a href="" class="font-bold text-xl hover:text-red">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <div class="flex">
+            <div class="mr-7">
+                <img width="30" height="30" src="img/Cart.png" alt="">
+            </div>
+            <button class="inline-block border-2 border-red-500 rounded-xl p-2 px-4 font-bold text-red-500 hover:text-white hover:bg-red ">Sign In</button>
+            <button class="bg-red-500 border-2 border-red-500 rounded-xl p-2 px-4 text-white ml-3 hover:text-red hover:bg-white ">Sign Up</button>
+        </div>
+    </div>
+    <div class="mt-10">
+        <img src="img/Rectangle 1372.png" alt="">
+    </div>
+    <div class="justify-between flex mt-14">
+        <div class="menu">
+            <ul>
+                <li><a class="font-bold text-2xl" href="">Breakfast</a></li><br>
+                <li><a class="font-bold text-2xl" href="">Vegan</a></li><br>
+                <li><a class="font-bold text-2xl" href="">Meat</a></li><br>
+                <li><a class="font-bold text-2xl" href="">Dessert</a></li><br>
+                <li><a class="font-bold text-2xl" href="">Lunch</a></li><br>
+                <li><a class="font-bold text-2xl" href="">Chocolate</a></li><br>
+            </ul>
+        </div>
+        <div class="menu2">
+            <div class="grid grid-cols-3 gap-8 ">
+                <div>
+                    <div><img src="img/Mask Group (3).png" width="350" height="230" alt="" class=""></div>
+                    <p class="mt-4 font-bold text-2xl">Fresh and Healthy Mixed<br> Mayonnaise Salad</p>
+                    <p class="text-red-500 font-bold text-2xl mt-2">$30</p>
+                    <button class="mt-4 w-8 w-80 border-2 bg-black text-white rounded-md font-bold">Add To Cart</button>
+                </div>
+                <div>
+                    <div><img src="img/Mask Group (4).png" width="350" height="230" alt="" class=""></div>
+                    <p class="mt-4 font-bold text-2xl">The Creamiest Creamy Chicken</p>
+                    <p class="text-red-500 font-bold text-2xl mt-9">$30</p>
+                    <button class="mt-5 w-8 w-80 border-2 bg-black text-white rounded-md font-bold" font-bold>Add To Cart</button>
+                </div>
+                <div>
+                    <div><img src="img/Mask Group (5).png" width="350" height="230" alt="" class=""></div>
+                    <p class="mt-4 font-bold text-2xl">Fruity Pancake with Orange &<br> Blueberry</p>
+                    <p class="text-red-500 font-bold text-2xl mt-2">$30</p>
+                    <button class="mt-4 w-8 w-80 border-2 bg-black text-white rounded-md font-bold">Add To Cart</button>
+                </div>
+            </div>
+            <div class="grid grid-cols-3 gap-8 mt-14 ">
+                <div>
+                    <div><img src="img/Mask Group (3).png" width="350" height="230" alt="" class=""></div>
+                    <p class="mt-4 font-bold text-2xl">Fresh and Healthy Mixed<br> Mayonnaise Salad</p>
+                    <p class="text-red-500 font-bold text-2xl mt-2">$30</p>
+                    <button class="mt-4 h-8 w-80 border-2 bg-black text-white rounded-md font-bold">Add To Cart</button>
+                </div>
+                <div>
+                    <div><img src="img/Mask Group (4).png" width="350" height="230" alt="" class=""></div>
+                    <p class="mt-4 font-bold text-2xl">The Creamiest Creamy Chicken</p>
+                    <p class="text-red-500 font-bold text-2xl mt-9">$30</p>
+                    <button class="mt-5 h-8 w-80 border-2 bg-black text-white rounded-md font-bold">Add To Cart</button>
+                </div>
+                <div>
+                    <div><img src="img/Mask Group (5).png" width="350" height="230" alt="" class=""></div>
+                    <p class="mt-4 font-bold text-2xl">Fruity Pancake with Orange &<br> Blueberry</p>
+                    <p class="text-red-500 font-bold text-2xl mt-2">$30</p>
+                    <button class="mt-4 h-8 w-80 border-2 bg-black text-white rounded-md font-bold">Add To Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="border-line mt-24"></div>
+    <footer class="mt-10 justify-between flex">
+        <div class="font-bold text-3xl flex">Fudo
+            <p class="text-red-500">.</p>
+        </div>
+        <div class="menu mx-4">
+            <ul class="flex mx-4">
+                <li class="mx-4"><a href="" class=" font-bold text-lg text-gray-500">Home</a></li>
+                <li class="mx-4"><a href="" class=" font-bold text-lg text-gray-500">Products</a></li>
+                <li class="mx-4"><a href="" class=" font-bold text-lg text-gray-500">About Us</a></li>
+                <li class="mx-4"><a href="" class=" font-bold text-lg text-gray-500">Contact Us</a></li>
+            </ul>
+        </div>
+    </footer>
 </body>
 
 </html>
