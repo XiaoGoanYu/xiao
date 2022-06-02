@@ -11,13 +11,30 @@
 </head>
 
 <body>
+    <button> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></button>
 
-    <body class="container xl mx-auto">
+    <!-- Top Navigation Menu -->
+    <div class="topnav">
+        <a href="#home" class="active">Logo</a>
+        <!-- Navigation links (hidden by default) -->
+        <div id="myLinks">
+            <a href="#news" class="font-bold text-2xl">News</a>
+            <br>
+            <a href="#contact" class="font-bold text-2xl">Contact</a>
+            <br>
+            <a href="#about" class="font-bold text-2xl">About</a>
+        </div>
+        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+    <div class="container xl mx-auto">
         <div class="flex justify-between text-center mt-8 mt-20s">
             <div class="font-bold text-3xl flex">Fudo
                 <p class="text-red-500">.</p>
             </div>
-            <div class="menu mx-4">
+            <div class="menu mx-4 sm:display:none">
                 <ul class="flex mx-4">
                     <li class="mx-4"><a href="./index.html" class="text-red-500 font-bold text-lg hover:text-gray">Home</a></li>
                     <li class="mx-4"><a href="./product.html" class=" font-bold text-lg text-gray-500 hover:text-red ">Products</a></li>
@@ -34,22 +51,22 @@
             </div>
         </div>
         <div class="banner">
-            <div class="justify-between flex mt-36">
+            <div class="justify-between flex mt-36 sm:max-w-full mx-auto ">
                 <div class="banner1 ">
                     <div class=" inline-block item s-end bg-red-100 font-bold text-red-500 border-2 border-red-100  py-2 px-4 rounded-lg ">
                         Quality Food
                     </div>
-                    <div class="font-bold text-8xl mt-24">
+                    <div class="font-bold text-xl mt-24 sm:text-3xl md:text-6xl xl:text-8xl">
                         Fastest
                     </div>
                     <div class="flex">
-                        <div class="font-bold text-8xl text-red-500">Delivery&nbsp; </div>
-                        <p class="font-bold text-8xl"> &</p>
+                        <div class="font-bold text-xl text-red-500 sm:text-3xl md:text-6xl xl:text-8xl">Delivery&nbsp; </div>
+                        <p class="font-bold text-xl sm:text-3xl md:text-6xl xl:text-8xl"> &</p>
                     </div>
 
                     <div class="flex">
-                        <div class="font-bold text-8xl">Easy </div>
-                        <p class="font-bold text-8xl text-red-500">&nbsp;Pickup</p>
+                        <div class="font-bold text-xl sm:text-3xl md:text-6xl xl:text-8xl">Easy </div>
+                        <p class="font-bold text-xl text-red-500 sm:text-3xl md:text-6xl xl:text-8xl">&nbsp;Pickup</p>
                     </div>
                     <div class="mt-5 text-gray-500 text-lg">
                         <p>Best cooks and best delivery guys all at your service. Hot tasty food will </p>
@@ -58,13 +75,13 @@
                     <div class="flex mt-4">
                         <form action="">
                             <input class=" h-14 w-72 pl-7  mt-5 border-2 border-red-300 rounded-xl" placeholder="Enter your delivery location" type="text">
-                            <button type="submit" class="  h-14 w-40 border-1 border-red-300 rounded-xl text-white bg-red-500">Discover</button>
+                            <button type="submit" class="  h-14 w-40 border-1 border-red-300 rounded-xl text-white bg-red-500 ">Discover</button>
 
                         </form>
                     </div>
                 </div>
                 <div class="">
-                    <img width="616px" height="705px" src="img/Images.png" alt="">
+                    <img width="616px" height="705px" class="sm:w-200 sm:h-200 xl:h-600 xl:h-700" src="img/Images.png" alt="">
                 </div>
             </div>
         </div>
@@ -180,7 +197,7 @@
                 <p class="font-bold text-xl py-4 px-7 pjustify-center ">View All Categories</p>
             </div>
         </div>
-        <div class="grid grid-cols-6 sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-3 ">
+        <div class="grid grid-cols-6 sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-6 ">
             <div class="mt-20  ">
                 <div class="justify-center">
                     <img src="img/Group 890.png" width="150" height="150" alt="" class="mx-auto">
@@ -272,7 +289,7 @@
 
 
 
-    </body>
+    </div>
 </body>
 
 </html>
