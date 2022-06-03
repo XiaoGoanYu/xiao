@@ -1,0 +1,91 @@
+#app {
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    color: #2c3e50;
+    margin-top: 60px;
+}
+
+
+/* menu */
+
+
+/* ================== sm ============== */
+
+@media(min-width:168px) {
+    .mx\:dis-none {
+        display: block;
+    }
+}
+
+@media(min-width:168px) {
+    .mm\:dis-none {
+        display: none;
+    }
+}
+
+
+/* ==================== md ====================== */
+
+@media(min-width:1280px) {
+    .mxl\:dis-none {
+        display: none;
+    }
+}
+
+@media(min-width:1280px) {
+    .mml\:dis-none {
+        display: block;
+    }
+}
+
+
+/* ==================== banner ====================== */
+
+@media(min-width:468px) {
+    .baner\:flex-none {
+        display: none;
+    }
+}
+
+
+/*================== body ===============*/
+
+@media(min-width:768px) {
+    .ct\:container {
+        max-width: 168px;
+        margin: auto;
+    }
+}
+
+@media(min-width:1024px) {
+    .ct\:container-xl {
+        max-width: 1024px;
+        margin: auto;
+    }
+}
+
+
+/* ====== img ===== */
+
+@media(min-width:768px) {
+    .img\:img-md {
+        width: 768px;
+        height: 768px;
+    }
+}
+
+@media(min-width:168px) {
+    .img\:img-sm {
+        width: 414px;
+        height: 414px;
+    }
+}
+
+@media(min-width:1024px) {
+    .img\:img-xl {
+        width: 616px;
+        height: 705px;
+    }
+}

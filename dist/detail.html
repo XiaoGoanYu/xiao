@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="container xl mx-auto">
+    <div class="flex justify-between text-center mt-8 mt-20s">
+        <div class="font-bold text-3xl flex">Fudo
+            <p class="text-red-500">.</p>
+        </div>
+        <div class="menu mx-4">
+            <ul class="flex mx-4">
+                <li class="mx-4"><a href="./index.html" class="text-red-500 font-bold text-lg hover:text-gray">Home</a></li>
+                <li class="mx-4"><a href="./product.html" class=" font-bold text-lg text-gray-500 hover:text-red ">Products</a></li>
+                <li class="mx-4"><a href="./detail.html" class=" font-bold text-lg text-gray-500 hover:text-red">About Us</a></li>
+                <li class="mx-4"><a href="" class=" font-bold text-lg text-gray-500 hover:text-red">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="flex">
+            <div class="mr-7">
+                <img width="30" height="30" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAXbSURBVHgB7VpBcxs1FH7S2qYcGDxwKLeqQ5KGdmonN244R04EaBJuTX5B8g8afgH+B5gLQ9oOuL8A98ip63QIbZqZKDfgULZcyNheiffstSOv116t7Wm9qb+ZZCXts1afnva9p7cCmGOOOdIMRv8Wbm98xhkrjZCTx4f3f4BLALa8/I1Q76hTC1nZbLRKp3/8fAYpBve5n7eUFZmcU4GUg784euDitWojzICVxMq67QTNJFicwI3C1q5mutytY3n1hduepFSCxwn4WvWRY4oVIcWIJdxymnWzrgFWIMWIJSzdqocXr9fA9OUmTNCgzWWdasIZKynNXDRvJSqipc4vFjd+DcoeToZnyHnMXA0dSLOitO6rc8W9pmr2fqP/U6+krIb7mBqsCDua1xVTvTq5J6MMxo1YYEQXatCQNYeRA1gqbpoSfa9UMMGDk9qZbLfxb+PRqAmzGCLA4s2NFZZlTyAdkEqpvZOnDx9F3bR6h5u5pgw14WwySX8wexCc8yrtD6JuWmmYcKO4dYrLSQRV97h+fzXyaRiJXYErvWiMA88rUOHoTJgV1Mg1s46uL88YyxuDpPLQPnBcUfdlgzVWAy/Tg53Rgp6lFkFZDJMbcGOvCcsruAnS6he48CIi42cpSHpsylktaYLWF9aWLPX11a+uwQzhmfuTxLB3x2xD+zjgQq0Jk6U267lWdub8sQNO38oixYRlrAljbzWzim5KwIyBtBwnY014oDOWzojLXsPQXiLSKJcghUhEGN1FzagKSCGSaVhD39541iy1DRIRBt2/Ecj6mRKkDMk07LCZTgZQ8BEnk4hwYKl7vg4du4AZQsv3QyGqHoj4rENLAxIuNPvGNSzEep69y9/PZvH1YrBv3nO4Uw/Lj0EYkwHQS/MI2iyEA/Rp4PonHYPoZPgKZ5wiJkGbCrSc7TK6RQHRm4ouJK7IWrgxMWGy1NrYY0UF6KNARLI8m1fcFz0iTBOBPG1KgnBQRD7b+B8D2eSt0vA+EiDYlZifZjDbgEvJZ67iKo8ZjfagFe2oUBsBAVoRo7QxNeDzag3e3D59Ev1JKDFhAuW03mCkRckHeoWkpj+tPU7JCM5encN5Ne71GsdogcOcHdQyJfIETA9dIi4S8Uwi0DGUEgl5k9qLsTRMCJb2d1hch5EPYJLcQ+eKLg2zlpiCOcMsiJeBjKSrzS5nWhibcBeBsy9160QA0zrtEPR1EpljjrcUE7/DJijMy7zXDkTan1COfz+owxRBQYuTcQSV/ZYvxzl+MRXCS7e2ijqjyhG+WaIlr5wcPvwWJsDC7TtfoHvai+qfgp4kB24mJvxx4eu76Jcro2Qop91kzbVxfOhC4c49DEH3R8ngpO7bTqoDE4A+Zzj4WSNODjXzEbqqT1/+dZTo6JMN2Xb/jJU+uHrTw/5/i5NNlvEI/5izilknTTLN9pDhlziMvnu0HJcKm3fBEnScKkyW4mRs24nsn7GyzYGbsUJLQvCxSpiDwe9Na4YIfdCq4KTUug24K9rGi5WWVU71Tw6+q88PD8xlW10sbHqYhNjrNuRUbhcvI5f22BoOn9zDGR540MnTB49R6zWjyTphgJNT6pUxNEXDNNB/kzeozTiOEd//REvaBAb2buQNOj3QGw8ba3s47LNsYARlkv7HJhzsbHoIEgERguMdgjH7p8TAiPdTQAKMTXjg/BbvzycR6D0PHY+ogS2MHDhpLqty9wb6RysORlIBt5Q1iMFEfnipuEmZD2E0SbTSZV/7kjFeMg1KZ0SwbRskkEZzOvdP/891RStdpdQQGcBwIIJpHTEs09HFRITbx465ndZIu8/rB2uQAIuFjV1yN1bCnYgrNviYKPB4+ffR2YdXb0lksz56LNptsMbn3p/PziFJ/xhIYP/QPTI14gFWZAlTiaUpCYDvz/dIrBS6hRkOKNsOZhjaAUsn5yzMdlo1vvLLw07sRGG6u6XOgZa2VcZQ0jtyf3RhigiyKyKoynlGZY455rj0+B/Y5jfaRbbu1wAAAABJRU5ErkJggg==" alt="">
+            </div>
+            <button class="inline-block border-2 border-red-500 rounded-xl p-2 px-4 font-bold text-red-500 hover:text-white hover:bg-red "><a href="./sigin.html"> Sign In</a></button>
+            <button class="bg-red-500 border-2 border-red-500 rounded-xl p-2 px-4 text-white ml-3 hover:text-red hover:bg-white "><a href="./sigup.html"> Sign Up</a></button>
+        </div>
+    </div>
+    <div class="flex justify-between mt-28">
+        <div>
+            <p class="font-bold text-4xl">Big and Juicy Wagyu Beef<br> Cheeseburger</p>
+            <p class="text-red-500 text-4xl font-medium mt-6"> $30</p>
+            <p class="mt-8 text-black font-medium">Pellentesque habitant morbi tristique senectus et netus et malesuada<br> fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies<br> eget tempor sit amet, ante. Donec eu libero sit amet quam egestas
+                <br> semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.
+            </p>
+            <div>
+                <form action="">
+                    <input placeholder="Quantity" type="text" class="pl-5 mt-10 w-44 w-10 border-2 border-gray-200 rounded-md">
+                    <button class="ml-5 button-width-110 button-height-42 rounded-md bg-black text-white">Add To Cart</button>
+                </form>
+            </div>
+        </div>
+        <div class="">
+            <img src="/assets/Mask Group.b47bd264.png" alt="" class="">
+        </div>
+    </div>
+    <div class="ND">
+        <p class="font-bold text-3xl mt-20">Related Products</p>
+    </div>
+    <div class="grid grid-cols-3 gap-8 mt-8">
+        <div class="">
+            <img src="/assets/Mask Group (3).e75f9ca5.png" alt="">
+            <p class="font-bold text-2xl mt-4">Fresh and Healthy Mixed Mayonnaise Salad</p>
+            <p class=" mt-2 font-bold text-red-500 text-2xl">$30</p>
+            <button class=" mt-4 font-bold button-height-42 button-width-500 bg-black text-white rounded-md">Add To Cart</button>
+        </div>
+        <div class="">
+            <img src="/assets/Mask Group (4).1d99246d.png" alt="">
+            <p class="font-bold text-2xl mt-4">Fresh and Healthy Mixed Mayonnaise Salad</p>
+            <p class=" mt-2 font-bold text-red-500 text-2xl">$30</p>
+            <button class=" mt-4 font-bold button-height-42 button-width-500 bg-black text-white rounded-md">Add To Cart</button>
+        </div>
+        <div class="">
+            <img src="/assets/Mask Group (5).26d9dcf9.png" alt="">
+            <p class="font-bold text-2xl mt-4">Fresh and Healthy Mixed Mayonnaise Salad</p>
+            <p class=" mt-2 font-bold text-red-500 text-2xl">$30</p>
+            <button class=" mt-4 font-bold button-height-42 button-width-500 bg-black text-white rounded-md">Add To Cart</button>
+        </div>
+    </div>
+    <div class="border-line mt-24"></div>
+    <footer class="mt-10 justify-between flex">
+        <div class="font-bold text-3xl flex">Fudo
+            <p class="text-red-500">.</p>
+        </div>
+        <div class="menu mx-4">
+            <ul class="flex mx-4">
+                <li class="mx-4"><a href="" class=" font-bold text-lg text-gray-500">Home</a></li>
+                <li class="mx-4"><a href="" class=" font-bold text-lg text-gray-500">Products</a></li>
+                <li class="mx-4"><a href="" class=" font-bold text-lg text-gray-500">About Us</a></li>
+                <li class="mx-4"><a href="" class=" font-bold text-lg text-gray-500">Contact Us</a></li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+
+</html>

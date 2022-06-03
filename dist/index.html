@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.17e50649.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body>
+
+    <body class="container xl mx-auto">
+        <div class="flex justify-between text-center mt-8 mt-20s">
+            <div class="font-bold text-3xl flex">Fudo
+                <p class="text-red-500">.</p>
+            </div>
+            <div class="menu mx-4">
+                <ul class="flex mx-4">
+                    <li class="mx-4"><a href="./index.html" class="text-red-500 font-bold text-lg hover:text-gray">Home</a></li>
+                    <li class="mx-4"><a href="./product.html" class=" font-bold text-lg text-gray-500 hover:text-red ">Products</a></li>
+                    <li class="mx-4"><a href="./detail.html" class=" font-bold text-lg text-gray-500 hover:text-red">About Us</a></li>
+                    <li class="mx-4"><a href="" class=" font-bold text-lg text-gray-500 hover:text-red">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="flex">
+                <div class="mr-7">
+                    <img width="30" height="30" src="data:image/png;base64,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" alt="">
+                </div>
+                <button class="inline-block border-2 border-red-500 rounded-xl p-2 px-4 font-bold text-red-500 hover:text-white hover:bg-red "><a href="./sigin.html"> Sign In</a></button>
+                <button class="bg-red-500 border-2 border-red-500 rounded-xl p-2 px-4 text-white ml-3 hover:text-red hover:bg-white "><a href="./sigup.html"> Sign Up</a></button>
+            </div>
+        </div>
+        <div class="banner">
+            <div class="justify-between flex mt-36">
+                <div class="banner1 ">
+                    <div class=" inline-block item s-end bg-red-100 font-bold text-red-500 border-2 border-red-100  py-2 px-4 rounded-lg ">
+                        Quality Food
+                    </div>
+                    <div class="font-bold text-8xl mt-24">
+                        Fastest
+                    </div>
+                    <div class="flex">
+                        <div class="font-bold text-8xl text-red-500">Delivery&nbsp; </div>
+                        <p class="font-bold text-8xl"> &</p>
+                    </div>
+
+                    <div class="flex">
+                        <div class="font-bold text-8xl">Easy </div>
+                        <p class="font-bold text-8xl text-red-500">&nbsp;Pickup</p>
+                    </div>
+                    <div class="mt-5 text-gray-500 text-lg">
+                        <p>Best cooks and best delivery guys all at your service. Hot tasty food will </p>
+                        <p>reach you in 60 minutes.</p>
+                    </div>
+                    <div class="flex mt-4">
+                        <form action="">
+                            <input class=" h-14 w-72 pl-7  mt-5 border-2 border-red-300 rounded-xl" placeholder="Enter your delivery location" type="text">
+                            <button type="submit" class="  h-14 w-40 border-1 border-red-300 rounded-xl text-white bg-red-500">Discover</button>
+
+                        </form>
+                    </div>
+                </div>
+                <div class="">
+                    <img width="616px" height="705px" src="/assets/Images.4871bce8.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="mt-32">
+            <div class="text-center font-bold text-5xl">Our Popular Dishes</div>
+            <div class="text-gray-500 text-center mt-5">Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do eiusmod tempor incididunt ut </div>
+            <div class="text-gray-500 text-center">labore et dolore magna aliqut enim ad minim </div>
+        </div>
+        <div class="grid grid-cols-3  sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 mt-16">
+            <div class="colums">
+                <div>
+                    <img width="400px" height="271px" src="/assets/Mask Group.b47bd264.png" alt=""><br>
+                    <p class="text-red-500 font-bold">Big and Juicy Wagyu Beef Cheeseburger</p>
+                    <div class="flex mt-5">
+                        <div width="24" height="24" class="flex">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADSSURBVHgB7ZThDcIgEIVfjXvIBo6AG9RR3KCO4AaMghvgBucGHUExUoNY4PDSHyZ+yUuTA971aO8AHuR1S0Scg2vwOHqpJHbFr6C9DN6vyYVYDwHKy+Lz7ue+xQaNbL1GhvmkMZxhv3mLeZyEVQk1mJpkv62Z9w3mQzhjkrguJTCN5kOmqixOaF7tcKn5pBfdTIISp/A8VPZ1uQVC+++ZysWGqyTBGXIupUUNeQXV+WQF5gQGCguPigeLDru4EmKYW3wxrmP2eLZ/3OUUYjv8kXIH5iHcDIRGlzIAAAAASUVORK5CYII=" alt="">
+                            <p class="">30 Minutes</p>
+                        </div>
+                        <div class="flex ml-6">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAHwSURBVHgB7ZjNccIwEIXfJDnkmA5QKoAO7BLoAG45MqkAOoEOkg6ggyTHnGwqgNxyI9rBDBtisStL2JlE38wOi6yV9azVjw0kEv+ba2U9Y21irbT2UZXdWXuwdmttzeqOrA2svaE5mbWhtXdrn4hAYW1X/R6YV2VkvapsxMpG8KdvbcnamEsBV5ChJ22Yf8Aw/77meg4/SPDqJM5IQTeQ6TP/VahbMn8APZQyCzRAMwK8I5IAnvcGOqjeAg3RCDDML4W6dH1b+ZROPchMoRf7A98R0KwspSO2Dsr7MQKInUKndYxQd4ZAJAF3OK4sWxzT4xxcwLkRoKdvEIi0CvEViDo/Zf8Nvncmq3ze6XMCxmgB2n13AbZxtGuU8UsIaFIoBFf8BJGQBKwRhmvSDxEJScAzwqgTQPPCIBKSAJq4KzRnVlOWoWVoJWoygeeO9pYebYiTWIvvalTAPYF92okm4CBio7ypq/MZOhRAGOxTo3DcLBfip+hYAOeF3ShXxjwhsgDNYc6F5lx0So7IhAjwhR8Mo9GmgD4uQJsCfN6R1bQpwOACpBHwoMQF0HwXisUj9qdTaSUyaOltjTYZ341MQ4aWNrJfQRLQNUlA1yQBXZMEdE2IgJL5BeKxdtwjOnSmoS8VOeKTVW1Hf4NLJP4aX8gkxRidxAJoAAAAAElFTkSuQmCC" width="24" height="24" alt="">
+                            <p class="">Snack</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="colums">
+                <div>
+                    <img width="400px" height="271px" src="/assets/Mask Group (1).8860c2df.png" alt=""><br>
+                    <p class="text-red-500 font-bold">Fresh Lime Roasted Salmon</p>
+                    <div class="flex mt-5">
+                        <div width="24" height="24" class="flex">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADSSURBVHgB7ZThDcIgEIVfjXvIBo6AG9RR3KCO4AaMghvgBucGHUExUoNY4PDSHyZ+yUuTA971aO8AHuR1S0Scg2vwOHqpJHbFr6C9DN6vyYVYDwHKy+Lz7ue+xQaNbL1GhvmkMZxhv3mLeZyEVQk1mJpkv62Z9w3mQzhjkrguJTCN5kOmqixOaF7tcKn5pBfdTIISp/A8VPZ1uQVC+++ZysWGqyTBGXIupUUNeQXV+WQF5gQGCguPigeLDru4EmKYW3wxrmP2eLZ/3OUUYjv8kXIH5iHcDIRGlzIAAAAASUVORK5CYII=" alt="">
+                            <p class="">30 Minutes</p>
+                        </div>
+                        <div class="flex ml-6">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAHwSURBVHgB7ZjNccIwEIXfJDnkmA5QKoAO7BLoAG45MqkAOoEOkg6ggyTHnGwqgNxyI9rBDBtisStL2JlE38wOi6yV9azVjw0kEv+ba2U9Y21irbT2UZXdWXuwdmttzeqOrA2svaE5mbWhtXdrn4hAYW1X/R6YV2VkvapsxMpG8KdvbcnamEsBV5ChJ22Yf8Aw/77meg4/SPDqJM5IQTeQ6TP/VahbMn8APZQyCzRAMwK8I5IAnvcGOqjeAg3RCDDML4W6dH1b+ZROPchMoRf7A98R0KwspSO2Dsr7MQKInUKndYxQd4ZAJAF3OK4sWxzT4xxcwLkRoKdvEIi0CvEViDo/Zf8Nvncmq3ze6XMCxmgB2n13AbZxtGuU8UsIaFIoBFf8BJGQBKwRhmvSDxEJScAzwqgTQPPCIBKSAJq4KzRnVlOWoWVoJWoygeeO9pYebYiTWIvvalTAPYF92okm4CBio7ypq/MZOhRAGOxTo3DcLBfip+hYAOeF3ShXxjwhsgDNYc6F5lx0So7IhAjwhR8Mo9GmgD4uQJsCfN6R1bQpwOACpBHwoMQF0HwXisUj9qdTaSUyaOltjTYZ341MQ4aWNrJfQRLQNUlA1yQBXZMEdE2IgJL5BeKxdtwjOnSmoS8VOeKTVW1Hf4NLJP4aX8gkxRidxAJoAAAAAElFTkSuQmCC" width="24" height="24" alt="">
+                            <p class="">Snack</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="colums">
+                <div>
+                    <img width="400px" height="271px" src="/assets/Mask Group (2).15f2e7fa.png" alt=""><br>
+                    <p class="text-red-500 font-bold">The Best Easy One Pot Chicken and Rice</p>
+                    <div class="flex mt-5">
+                        <div width="24" height="24" class="flex">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADSSURBVHgB7ZThDcIgEIVfjXvIBo6AG9RR3KCO4AaMghvgBucGHUExUoNY4PDSHyZ+yUuTA971aO8AHuR1S0Scg2vwOHqpJHbFr6C9DN6vyYVYDwHKy+Lz7ue+xQaNbL1GhvmkMZxhv3mLeZyEVQk1mJpkv62Z9w3mQzhjkrguJTCN5kOmqixOaF7tcKn5pBfdTIISp/A8VPZ1uQVC+++ZysWGqyTBGXIupUUNeQXV+WQF5gQGCguPigeLDru4EmKYW3wxrmP2eLZ/3OUUYjv8kXIH5iHcDIRGlzIAAAAASUVORK5CYII=" alt="">
+                            <p class="">30 Minutes</p>
+                        </div>
+                        <div class="flex ml-6">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAHwSURBVHgB7ZjNccIwEIXfJDnkmA5QKoAO7BLoAG45MqkAOoEOkg6ggyTHnGwqgNxyI9rBDBtisStL2JlE38wOi6yV9azVjw0kEv+ba2U9Y21irbT2UZXdWXuwdmttzeqOrA2svaE5mbWhtXdrn4hAYW1X/R6YV2VkvapsxMpG8KdvbcnamEsBV5ChJ22Yf8Aw/77meg4/SPDqJM5IQTeQ6TP/VahbMn8APZQyCzRAMwK8I5IAnvcGOqjeAg3RCDDML4W6dH1b+ZROPchMoRf7A98R0KwspSO2Dsr7MQKInUKndYxQd4ZAJAF3OK4sWxzT4xxcwLkRoKdvEIi0CvEViDo/Zf8Nvncmq3ze6XMCxmgB2n13AbZxtGuU8UsIaFIoBFf8BJGQBKwRhmvSDxEJScAzwqgTQPPCIBKSAJq4KzRnVlOWoWVoJWoygeeO9pYebYiTWIvvalTAPYF92okm4CBio7ypq/MZOhRAGOxTo3DcLBfip+hYAOeF3ShXxjwhsgDNYc6F5lx0So7IhAjwhR8Mo9GmgD4uQJsCfN6R1bQpwOACpBHwoMQF0HwXisUj9qdTaSUyaOltjTYZ341MQ4aWNrJfQRLQNUlA1yQBXZMEdE2IgJL5BeKxdtwjOnSmoS8VOeKTVW1Hf4NLJP4aX8gkxRidxAJoAAAAAElFTkSuQmCC" width="24" height="24" alt="">
+                            <p class="">Snack</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 mt-16">
+            <div class="colums">
+                <div>
+                    <img width="400px" height="271px" src="/assets/Mask Group (3).e75f9ca5.png" alt=""><br>
+                    <p class="text-red-500 font-bold">Big and Juicy Wagyu Beef Cheeseburger</p>
+                    <div class="flex mt-5">
+                        <div width="24" height="24" class="flex">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADSSURBVHgB7ZThDcIgEIVfjXvIBo6AG9RR3KCO4AaMghvgBucGHUExUoNY4PDSHyZ+yUuTA971aO8AHuR1S0Scg2vwOHqpJHbFr6C9DN6vyYVYDwHKy+Lz7ue+xQaNbL1GhvmkMZxhv3mLeZyEVQk1mJpkv62Z9w3mQzhjkrguJTCN5kOmqixOaF7tcKn5pBfdTIISp/A8VPZ1uQVC+++ZysWGqyTBGXIupUUNeQXV+WQF5gQGCguPigeLDru4EmKYW3wxrmP2eLZ/3OUUYjv8kXIH5iHcDIRGlzIAAAAASUVORK5CYII=" alt="">
+                            <p class="">30 Minutes</p>
+                        </div>
+                        <div class="flex ml-6">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAHwSURBVHgB7ZjNccIwEIXfJDnkmA5QKoAO7BLoAG45MqkAOoEOkg6ggyTHnGwqgNxyI9rBDBtisStL2JlE38wOi6yV9azVjw0kEv+ba2U9Y21irbT2UZXdWXuwdmttzeqOrA2svaE5mbWhtXdrn4hAYW1X/R6YV2VkvapsxMpG8KdvbcnamEsBV5ChJ22Yf8Aw/77meg4/SPDqJM5IQTeQ6TP/VahbMn8APZQyCzRAMwK8I5IAnvcGOqjeAg3RCDDML4W6dH1b+ZROPchMoRf7A98R0KwspSO2Dsr7MQKInUKndYxQd4ZAJAF3OK4sWxzT4xxcwLkRoKdvEIi0CvEViDo/Zf8Nvncmq3ze6XMCxmgB2n13AbZxtGuU8UsIaFIoBFf8BJGQBKwRhmvSDxEJScAzwqgTQPPCIBKSAJq4KzRnVlOWoWVoJWoygeeO9pYebYiTWIvvalTAPYF92okm4CBio7ypq/MZOhRAGOxTo3DcLBfip+hYAOeF3ShXxjwhsgDNYc6F5lx0So7IhAjwhR8Mo9GmgD4uQJsCfN6R1bQpwOACpBHwoMQF0HwXisUj9qdTaSUyaOltjTYZ341MQ4aWNrJfQRLQNUlA1yQBXZMEdE2IgJL5BeKxdtwjOnSmoS8VOeKTVW1Hf4NLJP4aX8gkxRidxAJoAAAAAElFTkSuQmCC" width="24" height="24" alt="">
+                            <p class="">Snack</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="colums">
+                <div>
+                    <img width="400px" height="271px" src="/assets/Mask Group (4).1d99246d.png" alt=""><br>
+                    <p class="text-red-500 font-bold">Fresh Lime Roasted Salmon</p>
+                    <div class="flex mt-5">
+                        <div width="24" height="24" class="flex">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADSSURBVHgB7ZThDcIgEIVfjXvIBo6AG9RR3KCO4AaMghvgBucGHUExUoNY4PDSHyZ+yUuTA971aO8AHuR1S0Scg2vwOHqpJHbFr6C9DN6vyYVYDwHKy+Lz7ue+xQaNbL1GhvmkMZxhv3mLeZyEVQk1mJpkv62Z9w3mQzhjkrguJTCN5kOmqixOaF7tcKn5pBfdTIISp/A8VPZ1uQVC+++ZysWGqyTBGXIupUUNeQXV+WQF5gQGCguPigeLDru4EmKYW3wxrmP2eLZ/3OUUYjv8kXIH5iHcDIRGlzIAAAAASUVORK5CYII=" alt="">
+                            <p class="">30 Minutes</p>
+                        </div>
+                        <div class="flex ml-6">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAHwSURBVHgB7ZjNccIwEIXfJDnkmA5QKoAO7BLoAG45MqkAOoEOkg6ggyTHnGwqgNxyI9rBDBtisStL2JlE38wOi6yV9azVjw0kEv+ba2U9Y21irbT2UZXdWXuwdmttzeqOrA2svaE5mbWhtXdrn4hAYW1X/R6YV2VkvapsxMpG8KdvbcnamEsBV5ChJ22Yf8Aw/77meg4/SPDqJM5IQTeQ6TP/VahbMn8APZQyCzRAMwK8I5IAnvcGOqjeAg3RCDDML4W6dH1b+ZROPchMoRf7A98R0KwspSO2Dsr7MQKInUKndYxQd4ZAJAF3OK4sWxzT4xxcwLkRoKdvEIi0CvEViDo/Zf8Nvncmq3ze6XMCxmgB2n13AbZxtGuU8UsIaFIoBFf8BJGQBKwRhmvSDxEJScAzwqgTQPPCIBKSAJq4KzRnVlOWoWVoJWoygeeO9pYebYiTWIvvalTAPYF92okm4CBio7ypq/MZOhRAGOxTo3DcLBfip+hYAOeF3ShXxjwhsgDNYc6F5lx0So7IhAjwhR8Mo9GmgD4uQJsCfN6R1bQpwOACpBHwoMQF0HwXisUj9qdTaSUyaOltjTYZ341MQ4aWNrJfQRLQNUlA1yQBXZMEdE2IgJL5BeKxdtwjOnSmoS8VOeKTVW1Hf4NLJP4aX8gkxRidxAJoAAAAAElFTkSuQmCC" width="24" height="24" alt="">
+                            <p class="">Snack</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="colums">
+                <div>
+                    <img width="400px" height="271px" src="/assets/Mask Group (5).26d9dcf9.png" alt=""><br>
+                    <p class="text-red-500 font-bold">The Best Easy One Pot Chicken and Rice</p>
+                    <div class="flex mt-5">
+                        <div width="24" height="24" class="flex">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADSSURBVHgB7ZThDcIgEIVfjXvIBo6AG9RR3KCO4AaMghvgBucGHUExUoNY4PDSHyZ+yUuTA971aO8AHuR1S0Scg2vwOHqpJHbFr6C9DN6vyYVYDwHKy+Lz7ue+xQaNbL1GhvmkMZxhv3mLeZyEVQk1mJpkv62Z9w3mQzhjkrguJTCN5kOmqixOaF7tcKn5pBfdTIISp/A8VPZ1uQVC+++ZysWGqyTBGXIupUUNeQXV+WQF5gQGCguPigeLDru4EmKYW3wxrmP2eLZ/3OUUYjv8kXIH5iHcDIRGlzIAAAAASUVORK5CYII=" alt="">
+                            <p class="">30 Minutes</p>
+                        </div>
+                        <div class="flex ml-6">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAHwSURBVHgB7ZjNccIwEIXfJDnkmA5QKoAO7BLoAG45MqkAOoEOkg6ggyTHnGwqgNxyI9rBDBtisStL2JlE38wOi6yV9azVjw0kEv+ba2U9Y21irbT2UZXdWXuwdmttzeqOrA2svaE5mbWhtXdrn4hAYW1X/R6YV2VkvapsxMpG8KdvbcnamEsBV5ChJ22Yf8Aw/77meg4/SPDqJM5IQTeQ6TP/VahbMn8APZQyCzRAMwK8I5IAnvcGOqjeAg3RCDDML4W6dH1b+ZROPchMoRf7A98R0KwspSO2Dsr7MQKInUKndYxQd4ZAJAF3OK4sWxzT4xxcwLkRoKdvEIi0CvEViDo/Zf8Nvncmq3ze6XMCxmgB2n13AbZxtGuU8UsIaFIoBFf8BJGQBKwRhmvSDxEJScAzwqgTQPPCIBKSAJq4KzRnVlOWoWVoJWoygeeO9pYebYiTWIvvalTAPYF92okm4CBio7ypq/MZOhRAGOxTo3DcLBfip+hYAOeF3ShXxjwhsgDNYc6F5lx0So7IhAjwhR8Mo9GmgD4uQJsCfN6R1bQpwOACpBHwoMQF0HwXisUj9qdTaSUyaOltjTYZ341MQ4aWNrJfQRLQNUlA1yQBXZMEdE2IgJL5BeKxdtwjOnSmoS8VOeKTVW1Hf4NLJP4aX8gkxRidxAJoAAAAAElFTkSuQmCC" width="24" height="24" alt="">
+                            <p class="">Snack</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class=" flex justify-between mt-24">
+            <p class="font-bold text-6xl">Categories</p>
+            <div class="border-2 border-red-500 text-red-500 mr-20 rounded-xl">
+                <p class="font-bold text-xl py-4 px-7 pjustify-center ">View All Categories</p>
+            </div>
+        </div>
+        <div class="grid grid-cols-6 sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-3 ">
+            <div class="mt-20  ">
+                <div class="justify-center">
+                    <img src="/assets/Group 890.e6180693.png" width="150" height="150" alt="" class="mx-auto">
+                    <p class=" font-bold text-center mr-7">Breakfast</p>
+                </div>
+            </div>
+            <div class="mt-20  ">
+                <div class="justify-center">
+                    <img src="/assets/Group 879.229993f2.png" width="150" height="150" alt="" class="mx-auto">
+                    <p class=" font-bold text-center mr-7">Vegan</p>
+                </div>
+            </div>
+            <div class="mt-20  ">
+                <div class="justify-center">
+                    <img src="/assets/Group 891.f14ee2f4.png" width="150" height="150" alt="" class="mx-auto">
+                    <p class=" font-bold text-center mr-7">Meat</p>
+                </div>
+            </div>
+            <div class="mt-20  ">
+                <div class="justify-center">
+                    <img src="/assets/Group 892.c6821439.png" width="150" height="150" alt="" class="mx-auto">
+                    <p class=" font-bold text-center mr-7">Dessert</p>
+                </div>
+            </div>
+            <div class="mt-20  ">
+                <div class="justify-center">
+                    <img src="/assets/Group 893.af137dec.png" width="150" height="150" alt="" class="mx-auto">
+                    <p class=" font-bold text-center mr-7">Lunch</p>
+                </div>
+            </div>
+            <div class="mt-20  ">
+                <div class="justify-center">
+                    <img src="/assets/Group 894.2233c16c.png" width="150" height="150" alt="" class="mx-auto">
+                    <p class=" font-bold text-center mr-7">Chocolate</p>
+                </div>
+            </div>
+        </div>
+        <div class="text-center">
+            <h1 class="font-bold text-5xl mt-24">Contact us</h1>
+        </div>
+        <div class="flex mt-20 justify-between">
+            <div class="">
+                <form action="" class="max-w-7xl">
+                    <p class="text-3xl text-gray-500">NAME</p>
+                    <input placeholder="Enter your name..." type="text" class="pl-7 border-2 border-gray-300 w-96 h-16 rounded-xl">
+                </form>
+                <form action="">
+                    <p class="text-3xl text-gray-500 mt-10">SUBJECT</p>
+                    <input placeholder="Enter subject..." type="text" class="pl-7 border-2 border-gray-300 w-96 h-16 rounded-xl">
+                </form>
+            </div>
+            <div class="">
+                <form action="">
+                    <p class="text-3xl text-gray-500">EMAIL ADDRESS</p>
+                    <input placeholder="Your email address..." type="text" class="pl-7 border-2 border-gray-300 w-96 h-16 rounded-xl">
+                </form>
+                <form action="">
+                    <p class="text-3xl text-gray-500 mt-10">ENQUIRY TYPE</p>
+                    <select name="" id="" class="pl-7 border-2 border-gray-300 w-96 h-16 rounded-xl">
+                </select>
+                </form>
+            </div>
+
+
+        </div>
+        <div class="mt-10">
+            <p class="text-3xl text-gray-500">EMAIL ADDRESS</p>
+            <textarea placeholder="Enter your messages.." name="" id="" cols="206" rows="10" class="border-2 rounded-xl mt-10 text-gray-500">
+            
+        </textarea>
+        </div>
+        <div class="text-center">
+            <button type="Submit" class="mt-10 inline-block border-2 rounded-xl bg-black py-4 px-8 text-white">Submit</button>
+        </div>
+        <div class="border-line mt-24"></div>
+        <footer class="mt-10 justify-between flex">
+            <div class="font-bold text-3xl flex">Fudo
+                <p class="text-red-500">.</p>
+            </div>
+            <div class="menu mx-4">
+                <ul class="flex mx-4">
+                    <li class="mx-4"><a href="" class=" font-bold text-lg text-gray-500">Home</a></li>
+                    <li class="mx-4"><a href="" class=" font-bold text-lg text-gray-500">Products</a></li>
+                    <li class="mx-4"><a href="" class=" font-bold text-lg text-gray-500">About Us</a></li>
+                    <li class="mx-4"><a href="" class=" font-bold text-lg text-gray-500">Contact Us</a></li>
+                </ul>
+            </div>
+        </footer>
+
+
+
+    </body>
+</body>
+
+</html>
